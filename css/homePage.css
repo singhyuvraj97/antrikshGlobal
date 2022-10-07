@@ -31,7 +31,7 @@
   margin: auto;
   margin-bottom: 100px;
   padding: 24px;
-  max-width: 60%;
+  max-width: 50%;
   min-width: 320px;
   font-size: 1.5rem;
   font-weight: 600;
@@ -73,10 +73,14 @@
   color: #1e293b;
 }
 
-@media  screen and (max-width: 810px) {
+@media  screen and (max-width: 950px) {
   .homePageMainSubCont h2:first-child{
     color: #1e293b;
     font-size: 6rem;
+  }
+
+  .homePageIntro{
+    max-width: 70%;
   }
 
   .paraCont{
