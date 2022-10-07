@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
+@import url('./cleintsCard.css');
+
+@import url('./servicesCard.css');
+
+@import url('./homePage.css');
+
 *{
   margin: 0px;
   padding: 0px;
+  /* padding: 2px;
+  border: 1px solid red; */
   box-sizing: border-box;
 }
 
@@ -22,7 +30,7 @@ body{
   height: 100vh;
   font-family: var(--ui-main-font);
   display: flex;
-  overflow-y: scroll;
+  overflow: hidden;
 }
 
 .subCont{
@@ -45,6 +53,8 @@ body{
   margin-bottom: 10px;
   position: relative;
 }
+
+
 
 .menuHideBtn{
   display: none;
@@ -108,11 +118,8 @@ body{
   list-style: none;
 }
 
-.homePage{
-  height: calc(100% - 40px);
-}
-
-.servicesPage{
+.pageCont{
+  width: 100%;
   height: calc(100% - 40px);
 }
 
@@ -134,100 +141,6 @@ body{
   justify-content: center;
   align-items: center;
   padding: 24px;
-}
-
-.servicesCard{
-  max-width: 600px;
-  min-width: 340px;
-  margin: 15px auto;
-  border-radius: 20px;
-  box-shadow: 2px 2px 5px 2px #dde0e4;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  color: #838fa2;
-  font-size: small;
-}
-
-.cardHead{
-  padding: 24px;
-  width: 100%;
-  height: 320px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
-.cardHead h3,h5{
-  color: #1e293b;
-  text-transform: capitalize;
-  margin-bottom: 0.8rem;
-  font-weight: 500;
-}
-
-.cardHead h3{
-  font-size: 1.1rem;
-}
-
-.cardHead h5{
-  font-size: 0.8rem;
-}
-
-.cardHead p{
-  margin-bottom: 1.6rem;
-  font-weight: 400;
-  font-size: 0.9rem;
-  color: #64748b;
-}
-
-.cardHead ul{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 10px;
-}
-
-.cardHead ul li{
-  list-style: none;
-  background-color: #dbeafe;
-  color: #1e40af;
-  border-radius: 10px;
-  padding: 4px 6px;
-  font-size: small;
-  font-weight: 600;
-}
-
-.cardFoot{
-  width: 100%;
-  background-color: #f8fafc;
-  border: 1px solid #e0e7ff;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-
-.cardFoot div{
-  width: 100%;
-  height: 100%;
-  padding: 16px 24px;
-  text-align: right;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.cardFoot div a{
-  border: 1px solid #cdd6e2;
-  border-radius: 20px;
-  text-decoration: none;
-  padding: 10px 20px;
-  color: #1e293b;
-  font-weight: 600;
-  text-transform: capitalize;
 }
 
 .bannerCont{
@@ -260,13 +173,6 @@ body{
   width: 100%;
   height: 100%;
   display: block;
-}
-
-.servicesCardCont{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
 }
 
 @media screen and (min-width: 429px) and (max-width: 810px){

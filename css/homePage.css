@@ -1,0 +1,85 @@
+.homePageCont{
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background-image: linear-gradient(90d,#ffffff 100%, #f8fafc 100%);
+}
+
+.homePageMain{
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homePageMainSubCont h2:first-child{
+  color: #1e293b;
+  font-size: 12rem;
+}
+
+.homePageMainSubCont h2 span{
+  color: #df3b3b;
+  font-size: 4rem;
+}
+
+.homePageIntro{
+  margin: auto;
+  margin-bottom: 100px;
+  padding: 24px;
+  max-width: 60%;
+  min-width: 320px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px 2px #dde0e4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.paraHeading{
+  text-align: center;
+  color: #1e293b;
+  padding: 24px 48px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px 2px #dde0e4;
+}
+
+.paraCont{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.paraCont .para1, .para2{
+  font-size: 1rem;
+  color: #1e293b;
+  padding: 24px 48px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px 2px #dde0e4;
+}
+
+.homePageClients{
+  width: 100%;
+  height: 100%;
+  /* background-color: rgb(28, 141, 185); */
+  color: #1e293b;
+}
+
+@media  screen and (max-width: 810px) {
+  .homePageMainSubCont h2:first-child{
+    color: #1e293b;
+    font-size: 6rem;
+  }
+
+  .paraCont{
+    flex-wrap: wrap;
+  }
+}

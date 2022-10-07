@@ -15,6 +15,8 @@ let sideMenuBar = document.querySelector(".sideMenuBar");
 
 let sideMenuCloseBtn = document.querySelector(".menuHideBtn");
 
+let wordListCont = document.querySelector(".wordListCont");
+
 //event listener and event handlers
 sideMenuBtn.addEventListener("click",function(e){
   sideMenuBar.classList.toggle("hidePage");
@@ -23,3 +25,5 @@ sideMenuBtn.addEventListener("click",function(e){
 sideMenuCloseBtn.addEventListener("click",function(e){
   sideMenuBar.classList.toggle("hidePage");
 })
+
+let wordListArrCont = Object.values(wordListCont.children);
